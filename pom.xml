@@ -14,6 +14,7 @@
     <modules>
         <module>SpringBootConfig</module>
         <module>SpringBoot-MyBatis</module>
+        <module>SpringBoot-AOP-LOG</module>
     </modules>
 
     <properties>

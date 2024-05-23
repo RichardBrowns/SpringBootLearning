@@ -1,9 +1,12 @@
-package com.ethan.springbootaoplog.annotation;/**
- * @description: 
- * @projectName: SpringBootLearning
- * @packageName: com.ethan.springbootaoplog.annotation
- * @author: LiDa
- * @createTime: 2024/5/23 16:14
- * @version: 1.0
- */public @interface Log {
+package com.ethan.springbootaoplog.annotation;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Target(ElementType.METHOD)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface Log {
+    String value() default "";
 }
