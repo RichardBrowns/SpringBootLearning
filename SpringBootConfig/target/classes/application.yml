@@ -1,0 +1,10 @@
+mrbird:
+  blog:
+    name: MrBird's Blog
+    title: Spring Boot
+    wholeTitle: ${mrbird.blog.name} - ${mrbird.blog.title}
+
+# 启用dev配置环境
+spring:
+  profiles:
+    active: dev
